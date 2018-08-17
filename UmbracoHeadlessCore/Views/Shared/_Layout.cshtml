@@ -1,0 +1,51 @@
+﻿@using Umbraco.Headless.Client.Models
+@using Umbraco.Headless.Client.Services
+@model ContentItem
+@inject HeadlessService HeadlessService
+
+@{
+    var site = await HeadlessService.GetSite(Model);
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Umbraco Headless Demo</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="@Url.Content("/css/site.min.css")" rel="stylesheet">
+</head>
+<body>
+    <!--Main Navigation-->
+    <header>
+        <!-- Navbar -->
+        @Html.Partial("HeaderNav", site)
+        <!-- Navbar -->
+    </header>
+    <!--Main Navigation-->
+    <!--Main layout-->
+    <main class="mt-5 pt-5">
+        @RenderBody()
+    </main>
+    <!--Main layout-->
+    <!--Footer-->
+    <footer class="page-footer text-center font-small mdb-color darken-2 mt-4 wow fadeIn">
+        <!--Copyright-->
+        <div class="footer-copyright py-3">
+            © 2018 Copyright:
+            <a href="https://mdbootstrap.com/bootstrap-tutorial/" target="_blank"> MDBootstrap.com </a>
+        </div>
+        <!--/.Copyright-->
+    </footer>
+    <!--/.Footer-->
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="@Url.Content("/js/site.min.js")"></script>
+    <!-- Initializations -->
+    <script type="text/javascript">// Animations initialization
+        new WOW().init();</script> 
+</body>
+</html>

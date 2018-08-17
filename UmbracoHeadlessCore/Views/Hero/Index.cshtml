@@ -1,0 +1,51 @@
+﻿@model UmbracoHeadlessCore.Models.Hero
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            <div class="card">
+                <div class="card-body">
+                    @Html.Raw(Model.Bio)
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            @if (Model.Image != null)
+            {
+                <div class="card">
+                    <div class="view overlay">
+                        <img class="card-img-top rounded-top rounded-bottom" src="@(Model.ImageBaseUrl + Model.Image.Url + "?center=0.51,0.21&mode=resize&width=350&height=200")"/>
+                    </div>
+                </div>
+            }
+            <div class="card mt-2">
+                <div class="card-body">
+                    <dl>
+                        <dt>Real name</dt>
+                        <dd>@Model.Fullname</dd>
+                        <dt>Place of Birth</dt>
+                        <dd>@Model.PlaceOfBirth</dd>
+                        <dt>Citizenship</dt>
+                        <dd>@Model.Citizenship</dd>
+                        <dt>Aliases</dt>
+                        <dd>@Model.Aliases</dd>
+                        <dt>First appearance</dt>
+                        <dd>@Model.FirstAppearance</dd>
+                        <dt>Eyes</dt>
+                        <dd>@Model.Eyes</dd>
+                        <dt>Hair</dt>
+                        <dd>@Model.Hair</dd>
+                        <dt>Height</dt>
+                        <dd>@Model.Height</dd>
+                        <dt>Weight</dt>
+                        <dd>@Model.Weight</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

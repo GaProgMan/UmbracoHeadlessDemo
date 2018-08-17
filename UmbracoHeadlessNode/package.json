@@ -1,0 +1,14 @@
+{
+  "name": "umbracoheadlessnode",
+  "version": "1.0.0",
+  "description": "Node client sample for umbraco headless",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David Brendel",
+  "license": "ISC",
+  "dependencies": {
+    "umbraco-headless": "^0.1.4"
+  }
+}

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UmbracoHeadlessCore", "UmbracoHeadlessCore\UmbracoHeadlessCore.csproj", "{5625A927-2CD1-4E44-A2F3-E6E66FE79DCD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UmbracoHeadlessFunction", "UmbracoHeadlessFunction\UmbracoHeadlessFunction.csproj", "{63FF452A-8741-4390-B495-BAF29D9C19EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5625A927-2CD1-4E44-A2F3-E6E66FE79DCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5625A927-2CD1-4E44-A2F3-E6E66FE79DCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5625A927-2CD1-4E44-A2F3-E6E66FE79DCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5625A927-2CD1-4E44-A2F3-E6E66FE79DCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63FF452A-8741-4390-B495-BAF29D9C19EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63FF452A-8741-4390-B495-BAF29D9C19EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63FF452A-8741-4390-B495-BAF29D9C19EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63FF452A-8741-4390-B495-BAF29D9C19EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A664D3FF-25EC-4C13-A679-C34A4E95F648}
+	EndGlobalSection
+EndGlobal
